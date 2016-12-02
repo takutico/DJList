@@ -22,7 +22,7 @@ song_resource = SongResource()
 
 
 urlpatterns = [
-    url(r'^songs/', include('songs.urls')),
+    url(r'^', include('songs.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^api/', include(song_resource.urls)),
 ]
