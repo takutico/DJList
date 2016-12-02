@@ -85,11 +85,9 @@ DATABASES = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'djlist',
-        'USER': 'djlist',
-        'PASSWORD': 'djlist',
-        'HOST': '',
-        'PORT': '',
+        'OPTIONS': {
+            'read_default_file': os.path.join(BASE_DIR, 'local.cnf'),
+        },
     }
 }
 
