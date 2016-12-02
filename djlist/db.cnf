@@ -1,0 +1,4 @@
+database = djlist
+user = djlist
+password = djlist
+default-character-set = utf8
