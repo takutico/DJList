@@ -30,7 +30,6 @@
     <button type="submit" class="btn btn-primary">Add</button>
 </form>
 
-{% if song_list %}
     <table id="data_table" class="table table-sm table-striped">
         <thead>
         <tr>
@@ -40,23 +39,8 @@
         </tr>
         </thead>
         <tbody>
-        {% for data in song_list %}
-            <tr>
-                <td>{{ data.title }}</td>
-                <td>{{ data.author }}</td>
-                <td>
-                    {% if data.link %}
-                        <a href="{{ data.link }}">Link</a>
-                    {% endif %}
-                </td>
-            </tr>
-        {% endfor %}
         </tbody>
     </table>
-
-{% else %}
-    <p>No songs are available.</p>
-{% endif %}
 
 
 

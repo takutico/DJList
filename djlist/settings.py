@@ -25,7 +25,7 @@ SECRET_KEY = '#)sm8!^^@8#gea25#x)i0ufv5v7wosq*q_+xg3^v*wca_j9n7w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['dj.yamjim.info']
+ALLOWED_HOSTS = ['dj.yamjim.info', '127.0.0.1']
 
 
 # Application definition

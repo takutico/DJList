@@ -37,7 +37,7 @@ def add(request):
 
         Song(title=title, author=author, link=link).save()
 
-    return redirect('/songs/')
+    return redirect('/')
 
 
 def vote(request, song_id):

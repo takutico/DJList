@@ -1,3 +1,4 @@
+from tastypie.authorization import Authorization
 from tastypie.resources import ModelResource
 
 from songs.models import Song
@@ -9,3 +10,4 @@ class SongResource(ModelResource):
         queryset = Song.objects.all().order_by('-created')
         resource_name = 'song'
         include_resource_uri = False
+        authorization = Authorization()
